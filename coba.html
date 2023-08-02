@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coba</title>
+</head>
+<body  >
+    
+    <h1 ><div >
+    </div></h1>
+     <div id="text" ></div>
+
+
+  <script>
+  var i=0,text;
+  text = '<div>style="height: 100px; width: 100px; background-color: blue;"1</div>';
+  
+  
+  function ketik() {
+    if(i<text.length){
+      document.getElementById("text"). document.write += text.charAt(i);
+      i++;
+      setTimeout(ketik,80);
+    }
+  }
+  ketik();
+  
+  </script>
+
+
+
+</body>
+</html>
